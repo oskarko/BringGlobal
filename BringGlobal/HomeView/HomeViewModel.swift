@@ -9,6 +9,7 @@
 import Foundation
 
 enum HomeAction {
+    case load
     case maps
     case settings
 }
@@ -19,22 +20,36 @@ class HomeViewModel {
     
     weak var view: HomeViewControllerProtocol?
     var router: HomeRouter?
+    private var locationManager: LocationManagerProtocol!
+    private var locations = [LocationModel]()
+    
+    init(locationManager: LocationManagerProtocol? = LocationManager.shared) {
+        self.locationManager = locationManager
+    }
     
     // MARK: - Helpers
     
     func send(_ action: HomeAction) {
         switch action {
+        case .load: loadLocations()
         case .maps: router?.navigateToMaps()
         case .settings: router?.navigateToSettings()
         }
     }
     
+    private func loadLocations() {
+        locations = locationManager.getAllLocations()
+        view?.reloadData()
+    }
+    
     func numberOfRows() -> Int {
-        return .zero
+        return locations.count
     }
     
     func cellForRow(_ indexPath: IndexPath) -> LocationModel? {
-        return nil
+        guard indexPath.row < locations.count else { return nil }
+        
+        return locations[indexPath.row]
     }
     
 }

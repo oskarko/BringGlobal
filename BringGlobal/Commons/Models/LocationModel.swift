@@ -8,7 +8,10 @@
 //
 
 import Foundation
+import CoreLocation
 
-struct LocationModel {
-    
+struct LocationModel: Codable {
+    let title: String
+    let latitude: Double
+    let longitude: Double
 }

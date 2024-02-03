@@ -33,6 +33,10 @@
 		552A7A8C2B6E84F5000230FA /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A882B6E84F5000230FA /* MapsViewController.swift */; };
 		552A7A8D2B6E84F5000230FA /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A892B6E84F5000230FA /* MapsViewModel.swift */; };
 		552A7A8E2B6E84F5000230FA /* MapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552A7A8A2B6E84F5000230FA /* MapsViewController.xib */; };
+		552A7A952B6E9B94000230FA /* CustomCalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A942B6E9B94000230FA /* CustomCalloutView.swift */; };
+		552A7A972B6E9BE0000230FA /* CalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A962B6E9BE0000230FA /* CalloutView.swift */; };
+		552A7A992B6E9C34000230FA /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A982B6E9C34000230FA /* CustomAnnotationView.swift */; };
+		552A7A9C2B6EA6F7000230FA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A9B2B6EA6F7000230FA /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		552A7A882B6E84F5000230FA /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		552A7A892B6E84F5000230FA /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
 		552A7A8A2B6E84F5000230FA /* MapsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsViewController.xib; sourceTree = "<group>"; };
+		552A7A942B6E9B94000230FA /* CustomCalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalloutView.swift; sourceTree = "<group>"; };
+		552A7A962B6E9BE0000230FA /* CalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
+		552A7A982B6E9C34000230FA /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		552A7A9B2B6EA6F7000230FA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +202,7 @@
 		552A7A6B2B6E7AD1000230FA /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				552A7A9A2B6EA6CA000230FA /* Managers */,
 				552A7A832B6E836F000230FA /* Models */,
 				552A7A6C2B6E7AD8000230FA /* Extensions */,
 			);
@@ -242,12 +251,31 @@
 		552A7A862B6E84D7000230FA /* MapsView */ = {
 			isa = PBXGroup;
 			children = (
+				552A7A8F2B6E8FBB000230FA /* Views */,
 				552A7A872B6E84F5000230FA /* MapsRouter.swift */,
 				552A7A892B6E84F5000230FA /* MapsViewModel.swift */,
 				552A7A882B6E84F5000230FA /* MapsViewController.swift */,
 				552A7A8A2B6E84F5000230FA /* MapsViewController.xib */,
 			);
 			path = MapsView;
+			sourceTree = "<group>";
+		};
+		552A7A8F2B6E8FBB000230FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A962B6E9BE0000230FA /* CalloutView.swift */,
+				552A7A942B6E9B94000230FA /* CustomCalloutView.swift */,
+				552A7A982B6E9C34000230FA /* CustomAnnotationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		552A7A9A2B6EA6CA000230FA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A9B2B6EA6F7000230FA /* LocationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,12 +416,14 @@
 				552A7A682B6E7762000230FA /* HomeViewController.swift in Sources */,
 				552A7A762B6E7DBC000230FA /* SettingsRouter.swift in Sources */,
 				552A7A8C2B6E84F5000230FA /* MapsViewController.swift in Sources */,
+				552A7A952B6E9B94000230FA /* CustomCalloutView.swift in Sources */,
 				552A7A702B6E7B81000230FA /* UIImage+Ext.swift in Sources */,
 				552A7A692B6E7762000230FA /* HomeViewModel.swift in Sources */,
 				552A7A812B6E827A000230FA /* LocationCell.swift in Sources */,
 				552A7A6E2B6E7AE5000230FA /* UIBarButtonItem+Ext.swift in Sources */,
 				552A7A782B6E7DBC000230FA /* SettingsViewModel.swift in Sources */,
 				552A7A8D2B6E84F5000230FA /* MapsViewModel.swift in Sources */,
+				552A7A9C2B6EA6F7000230FA /* LocationManager.swift in Sources */,
 				552A7A672B6E7762000230FA /* HomeRouter.swift in Sources */,
 				552A7A7D2B6E81F9000230FA /* UIView+Ext.swift in Sources */,
 				552A7A302B6E7586000230FA /* AppDelegate.swift in Sources */,
@@ -401,6 +431,8 @@
 				552A7A8B2B6E84F5000230FA /* MapsRouter.swift in Sources */,
 				552A7A852B6E837C000230FA /* LocationModel.swift in Sources */,
 				552A7A772B6E7DBC000230FA /* SettingsViewController.swift in Sources */,
+				552A7A992B6E9C34000230FA /* CustomAnnotationView.swift in Sources */,
+				552A7A972B6E9BE0000230FA /* CalloutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

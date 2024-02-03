@@ -11,19 +11,15 @@ import UIKit
 
 class LocationCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var latLabel: UILabel!
+    @IBOutlet private weak var lngLabel: UILabel!
     
-    func configure(with: LocationModel) {
-        
+    
+    func configure(with locationModel: LocationModel) {
+        titleLabel.text = locationModel.title
+        latLabel.text = "lat: \(locationModel.latitude)"
+        lngLabel.text = "lng: \(locationModel.longitude)"
     }
     
 }

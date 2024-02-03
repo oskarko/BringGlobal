@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HomeViewControllerProtocol: AnyObject {
-
+    func reloadData()
 }
 
 final class HomeViewController: UIViewController {
@@ -22,13 +22,19 @@ final class HomeViewController: UIViewController {
     
     
     // MARK: - Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureNavigationController()
         configureTableView()
         configureUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // load all saved locations in order to print them in our tableView
+        viewModel.send(.load)
     }
     
 
@@ -86,11 +92,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
 
 }
 
 // MARK: - HomeViewControllerProtocol
 
 extension HomeViewController: HomeViewControllerProtocol {
-
+    func reloadData() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
 }

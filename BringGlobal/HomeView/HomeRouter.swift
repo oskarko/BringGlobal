@@ -46,6 +46,7 @@ class HomeRouter {
     
     func navigateToMaps() {
         let mapsView = MapsRouter.getViewController()
+        mapsView.modalPresentationStyle = .fullScreen
         viewController?.navigationController?.present(mapsView, animated: true)
     }
     

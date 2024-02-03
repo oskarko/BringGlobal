@@ -25,12 +25,42 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <standardMapConfiguration key="preferredConfiguration"/>
                 </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9Q-Sz-qah">
+                    <rect key="frame" x="341" y="75" width="36" height="36"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNt-bM-JHW">
+                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="3NT-hA-kzZ"/>
+                                <constraint firstAttribute="width" constant="36" id="k29-L8-skE"/>
+                            </constraints>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="lLs-AE-I5d"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="aNt-bM-JHW" firstAttribute="centerY" secondItem="j9Q-Sz-qah" secondAttribute="centerY" id="F7l-Hl-Wrn"/>
+                        <constraint firstAttribute="height" constant="36" id="NEc-tR-HS8"/>
+                        <constraint firstAttribute="width" constant="36" id="PxZ-wq-LBe"/>
+                        <constraint firstItem="aNt-bM-JHW" firstAttribute="centerX" secondItem="j9Q-Sz-qah" secondAttribute="centerX" id="z2q-N5-v1Z"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="18"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rLu-Sl-gJP" secondAttribute="bottom" id="5O7-7J-3lC"/>
+                <constraint firstItem="j9Q-Sz-qah" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="JQv-aa-uL7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rLu-Sl-gJP" secondAttribute="trailing" id="R7n-e7-4y7"/>
+                <constraint firstItem="j9Q-Sz-qah" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-16" id="ZPx-00-fQh"/>
                 <constraint firstItem="rLu-Sl-gJP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bBM-Qj-xSD"/>
                 <constraint firstItem="rLu-Sl-gJP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="geh-eD-dBQ"/>
             </constraints>
