@@ -37,7 +37,7 @@ class HomeViewModel {
         case .maps: router?.navigateToMaps()
         case .settings: router?.navigateToSettings()
         case let .trash(indexPath): removeLocation(for: indexPath)
-        case let .trash(indexPath): navigateToLocation(for: indexPath)
+        case let .details(indexPath): navigateToLocation(for: indexPath)
         }
     }
     
@@ -57,7 +57,7 @@ class HomeViewModel {
         guard indexPath.row < locations.count else { return }
         
         let selectedLocation = locations[indexPath.row]
-        router?.
+        router?.navigateToLocation(for: selectedLocation)
     }
     
     func numberOfRows() -> Int {

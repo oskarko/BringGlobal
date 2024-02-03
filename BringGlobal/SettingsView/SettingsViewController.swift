@@ -34,8 +34,7 @@ class SettingsViewController: UIViewController {
     // MARK: - Helpers
 
     private func configureUI() {
-        view.backgroundColor = .systemPurple
-
+        title = "Settings"
     }
     
 }

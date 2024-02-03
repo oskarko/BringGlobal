@@ -36,3 +36,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate {
+    static var rootViewController:UIViewController? {
+        get {
+            return UIApplication.shared.windows.first?.rootViewController
+        }
+    }
+    
+    static var keyWindow:UIWindow? {
+        get {
+            return UIApplication.shared.windows.first
+        }
+    }
+}

@@ -68,7 +68,7 @@ final class HomeViewController: UIViewController {
     }
 
     private func configureUI() {
-
+        title = "Brings"
     }
     
 }

@@ -1,4 +1,4 @@
-//  CityViewModel.swift
+//  City7DaysViewModel.swift
 //  BringGlobal
 //
 //  Created by Oscar R. Garrucho.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-class CityViewModel {
+class City7DaysViewModel {
     
     // MARK: - Properties
     
-    weak var view: CityViewControllerProtocol?
-    var router: CityRouter?
+    weak var view: City7DaysViewControllerProtocol?
+    var router: City7DaysRouter?
     
     private let locationModel: LocationModel!
     private let service: WeatherServiceProtocol!
@@ -27,42 +27,29 @@ class CityViewModel {
     
     // MARK: - Helpers
     
-    func show7DaysWeatherButtonTapped() {
-        router?.navigateTo7DaysForecast(for: locationModel)
-    }
-    
     func updateView() {
         let model = WeatherRequestModel(lat: "\(locationModel.latitude)", lon: "\(locationModel.longitude)")
         
         service.fetch(WeatherRequest.weather(model)) { [weak self] result in
-            guard let self = self else { return }
-            
             DispatchQueue.main.async {
+                guard let self = self else { return }
+                
                 switch result {
                 case let .success(response):
                     self.weather = response
                     self.view?.showCurrentWeather()
-                case let .failure(error):
-                    print(error.message ?? "--")
+                case .failure(_):
                     self.view?.showError()
                 }
             }
         }
     }
     
-    func getLocation() -> String {
-        return locationModel.title
+    func getWeatherDailyCount() -> Int {
+        weather?.daily?.count ?? 0
     }
     
-    func getWeather() -> NKWeatherCodable? {
-        return weather
-    }
-    
-    func getWeatherHoursCount() -> Int {
-        weather?.hourly?.count ?? 0
-    }
-    
-    func getWeatherHours(index: Int) -> NKWeatherCurrent? {
-        weather?.hourly?[index]
+    func getWeatherDaily(index: Int) -> NKWeatherDaily? {
+        weather?.daily?[index]
     }
 }

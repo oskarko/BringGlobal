@@ -11,6 +11,14 @@ import UIKit
 
 extension UIImage {
     
+    var asOriginal: UIImage {
+        self.withRenderingMode(.alwaysOriginal)
+    }
+    
+    var asTemplate: UIImage {
+        self.withRenderingMode(.alwaysTemplate)
+    }
+    
     func resized(to size: CGSize) -> UIImage {
         return UIGraphicsImageRenderer(size: size).image { _ in
             draw(in: CGRect(origin: .zero, size: size))

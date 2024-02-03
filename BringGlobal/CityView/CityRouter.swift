@@ -39,4 +39,8 @@ class CityRouter {
     
     // MARK: - Routes
     
+    func navigateTo7DaysForecast(for location: LocationModel) {
+        let city7DaysView = City7DaysRouter.getViewController(for: location)
+        viewController?.navigationController?.pushViewController(city7DaysView, animated: true)
+    }
 }

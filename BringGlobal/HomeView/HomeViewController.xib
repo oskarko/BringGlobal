@@ -20,9 +20,12 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-bg" translatesAutoresizingMaskIntoConstraints="NO" id="nvf-0P-FLY">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5CT-X6-Ax2">
                     <rect key="frame" x="16" y="59" width="361" height="759"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="14C-vd-JYK"/>
                         <outlet property="delegate" destination="-1" id="w82-PH-fEh"/>
@@ -33,7 +36,11 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="5CT-X6-Ax2" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="AyX-6i-bVl"/>
+                <constraint firstAttribute="bottom" secondItem="nvf-0P-FLY" secondAttribute="bottom" id="CXv-PL-Use"/>
+                <constraint firstItem="nvf-0P-FLY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HFo-ep-W7Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nvf-0P-FLY" secondAttribute="trailing" id="HN9-Lb-5iK"/>
                 <constraint firstItem="5CT-X6-Ax2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="LoO-8u-luf"/>
+                <constraint firstItem="nvf-0P-FLY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tua-bF-fHi"/>
                 <constraint firstItem="5CT-X6-Ax2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="x59-iv-egU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5CT-X6-Ax2" secondAttribute="trailing" constant="16" id="zDp-JB-5Lh"/>
             </constraints>
@@ -41,6 +48,7 @@
         </view>
     </objects>
     <resources>
+        <image name="icon-bg" width="390" height="844"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
