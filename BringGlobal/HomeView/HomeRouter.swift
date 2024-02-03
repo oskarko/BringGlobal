@@ -50,4 +50,9 @@ class HomeRouter {
         viewController?.navigationController?.present(mapsView, animated: true)
     }
     
+    func navigateToLocation(for locationModel: LocationModel) {
+        let cityView = CityRouter.getViewController(for: locationModel)
+        viewController?.navigationController?.pushViewController(cityView, animated: true)
+    }
+    
 }

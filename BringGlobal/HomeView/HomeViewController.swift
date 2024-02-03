@@ -96,7 +96,29 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 50
     }
     
-
+    func tableView(_ tableView: UITableView,
+                   editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // Trash action
+        let trash = UIContextualAction(style: .destructive,
+                                       title: "Trash") { [weak self] (action, view, completionHandler) in
+            self?.viewModel.send(.trash(indexPath))
+            completionHandler(true)
+        }
+        trash.backgroundColor = .systemRed
+        
+        let configuration = UISwipeActionsConfiguration(actions: [trash])
+        
+        return configuration
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.send(.details(indexPath))
+    }
 }
 
 // MARK: - HomeViewControllerProtocol

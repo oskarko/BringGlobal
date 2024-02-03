@@ -37,6 +37,19 @@
 		552A7A972B6E9BE0000230FA /* CalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A962B6E9BE0000230FA /* CalloutView.swift */; };
 		552A7A992B6E9C34000230FA /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A982B6E9C34000230FA /* CustomAnnotationView.swift */; };
 		552A7A9C2B6EA6F7000230FA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A9B2B6EA6F7000230FA /* LocationManager.swift */; };
+		552A7AA32B6EB716000230FA /* CityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A9F2B6EB716000230FA /* CityRouter.swift */; };
+		552A7AA42B6EB716000230FA /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AA02B6EB716000230FA /* CityViewController.swift */; };
+		552A7AA52B6EB716000230FA /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AA12B6EB716000230FA /* CityViewModel.swift */; };
+		552A7AA62B6EB716000230FA /* CityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552A7AA22B6EB716000230FA /* CityViewController.xib */; };
+		552A7AAC2B6EB9B4000230FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AAB2B6EB9B4000230FA /* Constants.swift */; };
+		552A7AAF2B6EB9C8000230FA /* APIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AAD2B6EB9C8000230FA /* APIURL.swift */; };
+		552A7AB02B6EB9C8000230FA /* APIPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AAE2B6EB9C8000230FA /* APIPath.swift */; };
+		552A7AB32B6EB9D3000230FA /* APIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AB12B6EB9D3000230FA /* APIErrorResponse.swift */; };
+		552A7AB42B6EB9D3000230FA /* ResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AB22B6EB9D3000230FA /* ResultResponse.swift */; };
+		552A7AB92B6EB9DD000230FA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AB52B6EB9DD000230FA /* HTTPMethod.swift */; };
+		552A7ABA2B6EB9DD000230FA /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AB62B6EB9DD000230FA /* APIRequest.swift */; };
+		552A7ABB2B6EB9DD000230FA /* NetworkRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AB72B6EB9DD000230FA /* NetworkRequester.swift */; };
+		552A7ABC2B6EB9DD000230FA /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7AB82B6EB9DD000230FA /* NetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +104,19 @@
 		552A7A962B6E9BE0000230FA /* CalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
 		552A7A982B6E9C34000230FA /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		552A7A9B2B6EA6F7000230FA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		552A7A9F2B6EB716000230FA /* CityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRouter.swift; sourceTree = "<group>"; };
+		552A7AA02B6EB716000230FA /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		552A7AA12B6EB716000230FA /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		552A7AA22B6EB716000230FA /* CityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityViewController.xib; sourceTree = "<group>"; };
+		552A7AAB2B6EB9B4000230FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		552A7AAD2B6EB9C8000230FA /* APIURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURL.swift; sourceTree = "<group>"; };
+		552A7AAE2B6EB9C8000230FA /* APIPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPath.swift; sourceTree = "<group>"; };
+		552A7AB12B6EB9D3000230FA /* APIErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorResponse.swift; sourceTree = "<group>"; };
+		552A7AB22B6EB9D3000230FA /* ResultResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultResponse.swift; sourceTree = "<group>"; };
+		552A7AB52B6EB9DD000230FA /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		552A7AB62B6EB9DD000230FA /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		552A7AB72B6EB9DD000230FA /* NetworkRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequester.swift; sourceTree = "<group>"; };
+		552A7AB82B6EB9DD000230FA /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,9 +198,9 @@
 		552A7A5F2B6E768E000230FA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				552A7A9E2B6EB703000230FA /* CityView */,
 				552A7A862B6E84D7000230FA /* MapsView */,
 				552A7A712B6E7DA8000230FA /* SettingsView */,
-				552A7A612B6E76D9000230FA /* CityView */,
 				552A7A602B6E7699000230FA /* HomeView */,
 			);
 			name = UI;
@@ -192,19 +218,14 @@
 			path = HomeView;
 			sourceTree = "<group>";
 		};
-		552A7A612B6E76D9000230FA /* CityView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = CityView;
-			sourceTree = "<group>";
-		};
 		552A7A6B2B6E7AD1000230FA /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				552A7AA72B6EB964000230FA /* Networking */,
 				552A7A9A2B6EA6CA000230FA /* Managers */,
 				552A7A832B6E836F000230FA /* Models */,
 				552A7A6C2B6E7AD8000230FA /* Extensions */,
+				552A7AAB2B6EB9B4000230FA /* Constants.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -276,6 +297,56 @@
 				552A7A9B2B6EA6F7000230FA /* LocationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		552A7A9E2B6EB703000230FA /* CityView */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A9F2B6EB716000230FA /* CityRouter.swift */,
+				552A7AA12B6EB716000230FA /* CityViewModel.swift */,
+				552A7AA02B6EB716000230FA /* CityViewController.swift */,
+				552A7AA22B6EB716000230FA /* CityViewController.xib */,
+			);
+			path = CityView;
+			sourceTree = "<group>";
+		};
+		552A7AA72B6EB964000230FA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				552A7AA82B6EB976000230FA /* API */,
+				552A7AA92B6EB97B000230FA /* Request */,
+				552A7AAA2B6EB983000230FA /* Models */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		552A7AA82B6EB976000230FA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				552A7AAE2B6EB9C8000230FA /* APIPath.swift */,
+				552A7AAD2B6EB9C8000230FA /* APIURL.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		552A7AA92B6EB97B000230FA /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				552A7AB62B6EB9DD000230FA /* APIRequest.swift */,
+				552A7AB52B6EB9DD000230FA /* HTTPMethod.swift */,
+				552A7AB82B6EB9DD000230FA /* NetworkRequest.swift */,
+				552A7AB72B6EB9DD000230FA /* NetworkRequester.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		552A7AAA2B6EB983000230FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				552A7AB12B6EB9D3000230FA /* APIErrorResponse.swift */,
+				552A7AB22B6EB9D3000230FA /* ResultResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				552A7A822B6E827A000230FA /* LocationCell.xib in Resources */,
+				552A7AA62B6EB716000230FA /* CityViewController.xib in Resources */,
 				552A7A8E2B6E84F5000230FA /* MapsViewController.xib in Resources */,
 				552A7A3C2B6E7587000230FA /* LaunchScreen.storyboard in Resources */,
 				552A7A392B6E7587000230FA /* Assets.xcassets in Resources */,
@@ -412,23 +484,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552A7AAC2B6EB9B4000230FA /* Constants.swift in Sources */,
 				552A7A7B2B6E7EC7000230FA /* UINavigationBar+Ext.swift in Sources */,
+				552A7AAF2B6EB9C8000230FA /* APIURL.swift in Sources */,
 				552A7A682B6E7762000230FA /* HomeViewController.swift in Sources */,
+				552A7AB02B6EB9C8000230FA /* APIPath.swift in Sources */,
 				552A7A762B6E7DBC000230FA /* SettingsRouter.swift in Sources */,
 				552A7A8C2B6E84F5000230FA /* MapsViewController.swift in Sources */,
 				552A7A952B6E9B94000230FA /* CustomCalloutView.swift in Sources */,
+				552A7AB92B6EB9DD000230FA /* HTTPMethod.swift in Sources */,
 				552A7A702B6E7B81000230FA /* UIImage+Ext.swift in Sources */,
 				552A7A692B6E7762000230FA /* HomeViewModel.swift in Sources */,
+				552A7AA32B6EB716000230FA /* CityRouter.swift in Sources */,
 				552A7A812B6E827A000230FA /* LocationCell.swift in Sources */,
 				552A7A6E2B6E7AE5000230FA /* UIBarButtonItem+Ext.swift in Sources */,
 				552A7A782B6E7DBC000230FA /* SettingsViewModel.swift in Sources */,
+				552A7AB42B6EB9D3000230FA /* ResultResponse.swift in Sources */,
 				552A7A8D2B6E84F5000230FA /* MapsViewModel.swift in Sources */,
 				552A7A9C2B6EA6F7000230FA /* LocationManager.swift in Sources */,
 				552A7A672B6E7762000230FA /* HomeRouter.swift in Sources */,
+				552A7ABC2B6EB9DD000230FA /* NetworkRequest.swift in Sources */,
 				552A7A7D2B6E81F9000230FA /* UIView+Ext.swift in Sources */,
 				552A7A302B6E7586000230FA /* AppDelegate.swift in Sources */,
 				552A7A322B6E7586000230FA /* SceneDelegate.swift in Sources */,
+				552A7AB32B6EB9D3000230FA /* APIErrorResponse.swift in Sources */,
 				552A7A8B2B6E84F5000230FA /* MapsRouter.swift in Sources */,
+				552A7AA42B6EB716000230FA /* CityViewController.swift in Sources */,
+				552A7AA52B6EB716000230FA /* CityViewModel.swift in Sources */,
+				552A7ABA2B6EB9DD000230FA /* APIRequest.swift in Sources */,
+				552A7ABB2B6EB9DD000230FA /* NetworkRequester.swift in Sources */,
 				552A7A852B6E837C000230FA /* LocationModel.swift in Sources */,
 				552A7A772B6E7DBC000230FA /* SettingsViewController.swift in Sources */,
 				552A7A992B6E9C34000230FA /* CustomAnnotationView.swift in Sources */,
