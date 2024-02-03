@@ -97,7 +97,6 @@ extension CityViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension CityViewController: CityViewControllerProtocol {
     func showCurrentWeather() {
-        NKProgress.dismiss()
         showView(true)
         let weather = viewModel.getWeather()
         imgWeather.setImage(from: weather?.current?.weather?.first?.icon?.asWeatherIcon ?? "")
@@ -111,7 +110,6 @@ extension CityViewController: CityViewControllerProtocol {
     }
     
     func showError() {
-        NKProgress.dismiss()
         let alert = UIAlertController(title: "Alert",
                                       message: "Problem Fetching Current Weather",
                                       preferredStyle: .alert)

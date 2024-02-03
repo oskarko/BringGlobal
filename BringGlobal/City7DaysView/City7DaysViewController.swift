@@ -28,7 +28,6 @@ class City7DaysViewController: UIViewController {
         
         configureUI()
         setUpTableView()
-        NKProgress.show(inView: view, color: .clear)
         viewModel.updateView()
     }
     
@@ -64,12 +63,10 @@ extension City7DaysViewController: UITableViewDelegate, UITableViewDataSource {
 extension City7DaysViewController: City7DaysViewControllerProtocol {
     
     func showCurrentWeather() {
-        NKProgress.dismiss()
         tableView.reloadData()
     }
     
     func showError() {
-        NKProgress.dismiss()
         let alert = UIAlertController(title: "Alert",
                                       message: "Problem Fetching Weather",
                                       preferredStyle: .alert)
