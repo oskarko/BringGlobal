@@ -9,12 +9,14 @@
 import UIKit
 
 protocol SettingsViewControllerProtocol: AnyObject {
-
+    func showConfirm()
 }
 
-class SettingsViewController: UIViewController {
+final class SettingsViewController: UIViewController {
     
     // MARK: - Properties
+    
+    @IBOutlet weak var systemSegmentControl: UISegmentedControl!
     
     var viewModel: SettingsViewModel!
     
@@ -30,6 +32,14 @@ class SettingsViewController: UIViewController {
 
     // MARK: - Selectors
 
+    @IBAction func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+        let index = sender.selectedSegmentIndex
+        viewModel.send(.measurement(index))
+    }
+    
+    @IBAction func deleteAllBookmarksButtonTapped(_ sender: UIButton) {
+        viewModel.send(.delete)
+    }
     
     // MARK: - Helpers
 
@@ -42,5 +52,13 @@ class SettingsViewController: UIViewController {
 // MARK: - SettingsViewControllerProtocol
 
 extension SettingsViewController: SettingsViewControllerProtocol {
-
+    func showConfirm() {
+        let alert = UIAlertController(title: "Alert",
+                                      message: "All locations deleted!",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay",
+                                      style: .default,
+                                      handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 }

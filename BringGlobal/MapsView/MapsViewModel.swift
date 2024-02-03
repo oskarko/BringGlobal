@@ -28,5 +28,7 @@ class MapsViewModel {
                                           latitude: annotation.coordinate.latitude,
                                           longitude: annotation.coordinate.longitude)
         locationManager.saveLocation(locationModel)
+        view?.removeAllAnnotations()
+        view?.showConfirm()
     }
 }

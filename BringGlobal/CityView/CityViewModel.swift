@@ -17,12 +17,15 @@ class CityViewModel {
     
     private let locationModel: LocationModel!
     private let service: WeatherServiceProtocol!
-    
+    private var locationManager: LocationManagerProtocol!
     private var weather: NKWeatherCodable?
     
-    init(locationModel: LocationModel, service: WeatherServiceProtocol? = WeatherService()) {
+    init(locationModel: LocationModel, 
+         service: WeatherServiceProtocol? = WeatherService(),
+         locationManager: LocationManagerProtocol? = LocationManager.shared) {
         self.locationModel = locationModel
         self.service = service
+        self.locationManager = locationManager
     }
     
     // MARK: - Helpers
@@ -32,7 +35,7 @@ class CityViewModel {
     }
     
     func updateView() {
-        let model = WeatherRequestModel(lat: "\(locationModel.latitude)", lon: "\(locationModel.longitude)")
+        let model = WeatherRequestModel(lat: "\(locationModel.latitude)", lon: "\(locationModel.longitude)", measurement: locationManager.getMeasurement())
         
         service.fetch(WeatherRequest.weather(model)) { [weak self] result in
             guard let self = self else { return }
@@ -64,5 +67,13 @@ class CityViewModel {
     
     func getWeatherHours(index: Int) -> NKWeatherCurrent? {
         weather?.hourly?[index]
+    }
+    
+    func getSpeed() -> String {
+        return locationManager.getMeasurement() == "metric" ? "m/s" : "mph"
+    }
+    
+    func getTemp() -> String {
+        return locationManager.getMeasurement() == "metric" ? "°C" : "°F"
     }
 }

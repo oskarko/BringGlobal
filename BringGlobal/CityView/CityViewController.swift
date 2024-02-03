@@ -101,10 +101,10 @@ extension CityViewController: CityViewControllerProtocol {
         showView(true)
         let weather = viewModel.getWeather()
         imgWeather.setImage(from: weather?.current?.weather?.first?.icon?.asWeatherIcon ?? "")
-        temperatureLabel.text = "\(Int(weather?.current?.temp ?? 0))"
+        temperatureLabel.text = "\(Int(weather?.current?.temp ?? 0)) \(viewModel.getTemp())"
         humedityLabel.text = "Humidity: \(Int(weather?.current?.humidity ?? 0))%"
         rainyLabel.text = "Rain Chance: \(Int(weather?.current?.rain?.the1H ?? 0))%"
-        windyLabel.text = "Wind Speed: \(Int(weather?.current?.windSpeed ?? 0))"
+        windyLabel.text = "Wind Speed: \(Int(weather?.current?.windSpeed ?? 0)) \(viewModel.getSpeed())"
         weatherTypeLabel.text = weather?.current?.weather?.first?.main ?? "N/A"
         dateLabel.text = weather?.current?.dt?.asDateOnly
         collectionView.reloadData()

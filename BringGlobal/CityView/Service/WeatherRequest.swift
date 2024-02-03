@@ -33,7 +33,7 @@ extension WeatherRequest: APIRequest {
                 return
             [
                 URLQueryItem(name: "appid", value: OPEN_WEATHER_KEY),
-                URLQueryItem(name: "units", value: "metric"),
+                URLQueryItem(name: "units", value: model?.measurement ?? "metric"),
                 URLQueryItem(name: "lat", value: model?.lat ?? ""),
                 URLQueryItem(name: "lon", value: model?.lon ?? ""),
             ]

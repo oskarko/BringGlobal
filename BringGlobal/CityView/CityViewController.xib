@@ -131,12 +131,6 @@
                         <constraint firstAttribute="height" constant="44" id="zxz-BO-POB"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" tag="1991" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5P-Pv-68i">
-                    <rect key="frame" x="241.00000000000003" y="243.99999999999997" width="40.333333333333343" height="119.66666666666666"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <stackView opaque="NO" tag="1991" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l9w-vx-7a1">
                     <rect key="frame" x="149" y="94" width="95.333333333333314" height="30"/>
                     <subviews>
@@ -161,8 +155,6 @@
             <constraints>
                 <constraint firstItem="TlZ-hb-v2J" firstAttribute="centerX" secondItem="5eQ-O3-YRG" secondAttribute="centerX" id="0i0-pR-BLz"/>
                 <constraint firstItem="AVP-7R-UOk" firstAttribute="top" secondItem="zv9-0n-gdO" secondAttribute="top" id="2EI-la-Zrl"/>
-                <constraint firstItem="X5P-Pv-68i" firstAttribute="leading" secondItem="rOu-LE-7yZ" secondAttribute="trailing" id="4fP-o0-RfY"/>
-                <constraint firstItem="X5P-Pv-68i" firstAttribute="top" secondItem="TlZ-hb-v2J" secondAttribute="top" id="9b5-8L-NVP"/>
                 <constraint firstItem="TlZ-hb-v2J" firstAttribute="top" secondItem="5eQ-O3-YRG" secondAttribute="bottom" id="Esw-Fg-12u"/>
                 <constraint firstItem="5eQ-O3-YRG" firstAttribute="top" secondItem="OW7-3k-jLT" secondAttribute="top" constant="85" id="FYk-Co-efo"/>
                 <constraint firstAttribute="bottom" secondItem="AVP-7R-UOk" secondAttribute="bottom" id="Isy-Hu-r3n"/>

@@ -66,7 +66,6 @@ class CustomCalloutView: CalloutView {
         super.init(annotation: annotation)
 
         configure()
-
         updateContents(for: annotation)
     }
 

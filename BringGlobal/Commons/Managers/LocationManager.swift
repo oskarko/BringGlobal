@@ -14,6 +14,9 @@ protocol LocationManagerProtocol {
     func saveLocation(_ location: LocationModel)
     func removeLocation(_ location: LocationModel)
     func getAllLocations() -> [LocationModel]
+    func removeAllLocations()
+    func updateMeasurement(for type: Int)
+    func getMeasurement() -> String
 }
 
 final class LocationManager: LocationManagerProtocol {
@@ -64,5 +67,19 @@ final class LocationManager: LocationManagerProtocol {
              return []
         }
         return allLocations
+    }
+    
+    func removeAllLocations() {
+        UserDefaults.standard.removeObject(forKey: "locations")
+    }
+    
+    func updateMeasurement(for type: Int) {
+        UserDefaults.standard.setValue(type, forKey: "measurement")
+    }
+    
+    func getMeasurement() -> String {
+        let int = UserDefaults.standard.integer(forKey: "measurement")
+        
+        return int == 0 ? "metric" : "imperial"
     }
 }

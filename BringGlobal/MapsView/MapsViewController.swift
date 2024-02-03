@@ -10,7 +10,8 @@ import UIKit
 import MapKit
 
 protocol MapsViewControllerProtocol: AnyObject {
-
+    func removeAllAnnotations()
+    func showConfirm()
 }
 
 class MapsViewController: UIViewController {
@@ -151,5 +152,17 @@ extension MapsViewController: UITextFieldDelegate {
 // MARK: - MapsViewControllerProtocol
 
 extension MapsViewController: MapsViewControllerProtocol {
-
+    func removeAllAnnotations() {
+        mapView.removeAnnotations(mapView.annotations)
+    }
+    
+    func showConfirm() {
+        let alert = UIAlertController(title: "Alert",
+                                      message: "Bookmark successfully added!",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay",
+                                      style: .default,
+                                      handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 }

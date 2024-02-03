@@ -17,18 +17,21 @@ class City7DaysViewModel {
     
     private let locationModel: LocationModel!
     private let service: WeatherServiceProtocol!
-    
+    private var locationManager: LocationManagerProtocol!
     private var weather: NKWeatherCodable?
     
-    init(locationModel: LocationModel, service: WeatherServiceProtocol? = WeatherService()) {
+    init(locationModel: LocationModel, 
+         service: WeatherServiceProtocol? = WeatherService(),
+         locationManager: LocationManagerProtocol? = LocationManager.shared) {
         self.locationModel = locationModel
         self.service = service
+        self.locationManager = locationManager
     }
     
     // MARK: - Helpers
     
     func updateView() {
-        let model = WeatherRequestModel(lat: "\(locationModel.latitude)", lon: "\(locationModel.longitude)")
+        let model = WeatherRequestModel(lat: "\(locationModel.latitude)", lon: "\(locationModel.longitude)", measurement: locationManager.getMeasurement())
         
         service.fetch(WeatherRequest.weather(model)) { [weak self] result in
             DispatchQueue.main.async {
