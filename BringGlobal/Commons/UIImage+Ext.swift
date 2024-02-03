@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UIImage+Ext.swift
 //  BringGlobal
 //
 //  Created by Oscar Rodriguez Garrucho on 3/2/24
@@ -9,13 +9,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+extension UIImage {
+    
+    func resized(to size: CGSize) -> UIImage {
+        return UIGraphicsImageRenderer(size: size).image { _ in
+            draw(in: CGRect(origin: .zero, size: size))
+        }
     }
-
-
 }
-

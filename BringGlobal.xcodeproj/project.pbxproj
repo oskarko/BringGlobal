@@ -9,13 +9,30 @@
 /* Begin PBXBuildFile section */
 		552A7A302B6E7586000230FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A2F2B6E7586000230FA /* AppDelegate.swift */; };
 		552A7A322B6E7586000230FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A312B6E7586000230FA /* SceneDelegate.swift */; };
-		552A7A342B6E7586000230FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A332B6E7586000230FA /* ViewController.swift */; };
-		552A7A372B6E7586000230FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552A7A352B6E7586000230FA /* Main.storyboard */; };
 		552A7A392B6E7587000230FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552A7A382B6E7587000230FA /* Assets.xcassets */; };
 		552A7A3C2B6E7587000230FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552A7A3A2B6E7587000230FA /* LaunchScreen.storyboard */; };
 		552A7A472B6E7587000230FA /* BringGlobalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A462B6E7587000230FA /* BringGlobalTests.swift */; };
 		552A7A512B6E7587000230FA /* BringGlobalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A502B6E7587000230FA /* BringGlobalUITests.swift */; };
 		552A7A532B6E7587000230FA /* BringGlobalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A522B6E7587000230FA /* BringGlobalUITestsLaunchTests.swift */; };
+		552A7A672B6E7762000230FA /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A632B6E7762000230FA /* HomeRouter.swift */; };
+		552A7A682B6E7762000230FA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A642B6E7762000230FA /* HomeViewController.swift */; };
+		552A7A692B6E7762000230FA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A652B6E7762000230FA /* HomeViewModel.swift */; };
+		552A7A6A2B6E7762000230FA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552A7A662B6E7762000230FA /* HomeViewController.xib */; };
+		552A7A6E2B6E7AE5000230FA /* UIBarButtonItem+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A6D2B6E7AE5000230FA /* UIBarButtonItem+Ext.swift */; };
+		552A7A702B6E7B81000230FA /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A6F2B6E7B81000230FA /* UIImage+Ext.swift */; };
+		552A7A762B6E7DBC000230FA /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A722B6E7DBC000230FA /* SettingsRouter.swift */; };
+		552A7A772B6E7DBC000230FA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A732B6E7DBC000230FA /* SettingsViewController.swift */; };
+		552A7A782B6E7DBC000230FA /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A742B6E7DBC000230FA /* SettingsViewModel.swift */; };
+		552A7A792B6E7DBC000230FA /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552A7A752B6E7DBC000230FA /* SettingsViewController.xib */; };
+		552A7A7B2B6E7EC7000230FA /* UINavigationBar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A7A2B6E7EC7000230FA /* UINavigationBar+Ext.swift */; };
+		552A7A7D2B6E81F9000230FA /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A7C2B6E81F9000230FA /* UIView+Ext.swift */; };
+		552A7A812B6E827A000230FA /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A7F2B6E827A000230FA /* LocationCell.swift */; };
+		552A7A822B6E827A000230FA /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552A7A802B6E827A000230FA /* LocationCell.xib */; };
+		552A7A852B6E837C000230FA /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A842B6E837C000230FA /* LocationModel.swift */; };
+		552A7A8B2B6E84F5000230FA /* MapsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A872B6E84F5000230FA /* MapsRouter.swift */; };
+		552A7A8C2B6E84F5000230FA /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A882B6E84F5000230FA /* MapsViewController.swift */; };
+		552A7A8D2B6E84F5000230FA /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A7A892B6E84F5000230FA /* MapsViewModel.swift */; };
+		552A7A8E2B6E84F5000230FA /* MapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552A7A8A2B6E84F5000230FA /* MapsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +56,6 @@
 		552A7A2C2B6E7586000230FA /* BringGlobal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BringGlobal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		552A7A2F2B6E7586000230FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		552A7A312B6E7586000230FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		552A7A332B6E7586000230FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		552A7A362B6E7586000230FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		552A7A382B6E7587000230FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		552A7A3B2B6E7587000230FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		552A7A3D2B6E7587000230FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +64,25 @@
 		552A7A4C2B6E7587000230FA /* BringGlobalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BringGlobalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		552A7A502B6E7587000230FA /* BringGlobalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BringGlobalUITests.swift; sourceTree = "<group>"; };
 		552A7A522B6E7587000230FA /* BringGlobalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BringGlobalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		552A7A632B6E7762000230FA /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		552A7A642B6E7762000230FA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		552A7A652B6E7762000230FA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		552A7A662B6E7762000230FA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		552A7A6D2B6E7AE5000230FA /* UIBarButtonItem+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Ext.swift"; sourceTree = "<group>"; };
+		552A7A6F2B6E7B81000230FA /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		552A7A722B6E7DBC000230FA /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		552A7A732B6E7DBC000230FA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		552A7A742B6E7DBC000230FA /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		552A7A752B6E7DBC000230FA /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		552A7A7A2B6E7EC7000230FA /* UINavigationBar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Ext.swift"; sourceTree = "<group>"; };
+		552A7A7C2B6E81F9000230FA /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		552A7A7F2B6E827A000230FA /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		552A7A802B6E827A000230FA /* LocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
+		552A7A842B6E837C000230FA /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		552A7A872B6E84F5000230FA /* MapsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsRouter.swift; sourceTree = "<group>"; };
+		552A7A882B6E84F5000230FA /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		552A7A892B6E84F5000230FA /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
+		552A7A8A2B6E84F5000230FA /* MapsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +133,10 @@
 		552A7A2E2B6E7586000230FA /* BringGlobal */ = {
 			isa = PBXGroup;
 			children = (
+				552A7A6B2B6E7AD1000230FA /* Commons */,
+				552A7A5F2B6E768E000230FA /* UI */,
 				552A7A2F2B6E7586000230FA /* AppDelegate.swift */,
 				552A7A312B6E7586000230FA /* SceneDelegate.swift */,
-				552A7A332B6E7586000230FA /* ViewController.swift */,
-				552A7A352B6E7586000230FA /* Main.storyboard */,
 				552A7A382B6E7587000230FA /* Assets.xcassets */,
 				552A7A3A2B6E7587000230FA /* LaunchScreen.storyboard */,
 				552A7A3D2B6E7587000230FA /* Info.plist */,
@@ -125,6 +159,95 @@
 				552A7A522B6E7587000230FA /* BringGlobalUITestsLaunchTests.swift */,
 			);
 			path = BringGlobalUITests;
+			sourceTree = "<group>";
+		};
+		552A7A5F2B6E768E000230FA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A862B6E84D7000230FA /* MapsView */,
+				552A7A712B6E7DA8000230FA /* SettingsView */,
+				552A7A612B6E76D9000230FA /* CityView */,
+				552A7A602B6E7699000230FA /* HomeView */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		552A7A602B6E7699000230FA /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A7E2B6E824A000230FA /* Cells */,
+				552A7A632B6E7762000230FA /* HomeRouter.swift */,
+				552A7A652B6E7762000230FA /* HomeViewModel.swift */,
+				552A7A642B6E7762000230FA /* HomeViewController.swift */,
+				552A7A662B6E7762000230FA /* HomeViewController.xib */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		552A7A612B6E76D9000230FA /* CityView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CityView;
+			sourceTree = "<group>";
+		};
+		552A7A6B2B6E7AD1000230FA /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A832B6E836F000230FA /* Models */,
+				552A7A6C2B6E7AD8000230FA /* Extensions */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		552A7A6C2B6E7AD8000230FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A6D2B6E7AE5000230FA /* UIBarButtonItem+Ext.swift */,
+				552A7A6F2B6E7B81000230FA /* UIImage+Ext.swift */,
+				552A7A7A2B6E7EC7000230FA /* UINavigationBar+Ext.swift */,
+				552A7A7C2B6E81F9000230FA /* UIView+Ext.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		552A7A712B6E7DA8000230FA /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A722B6E7DBC000230FA /* SettingsRouter.swift */,
+				552A7A742B6E7DBC000230FA /* SettingsViewModel.swift */,
+				552A7A732B6E7DBC000230FA /* SettingsViewController.swift */,
+				552A7A752B6E7DBC000230FA /* SettingsViewController.xib */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		552A7A7E2B6E824A000230FA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A7F2B6E827A000230FA /* LocationCell.swift */,
+				552A7A802B6E827A000230FA /* LocationCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		552A7A832B6E836F000230FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A842B6E837C000230FA /* LocationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		552A7A862B6E84D7000230FA /* MapsView */ = {
+			isa = PBXGroup;
+			children = (
+				552A7A872B6E84F5000230FA /* MapsRouter.swift */,
+				552A7A892B6E84F5000230FA /* MapsViewModel.swift */,
+				552A7A882B6E84F5000230FA /* MapsViewController.swift */,
+				552A7A8A2B6E84F5000230FA /* MapsViewController.xib */,
+			);
+			path = MapsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +354,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552A7A822B6E827A000230FA /* LocationCell.xib in Resources */,
+				552A7A8E2B6E84F5000230FA /* MapsViewController.xib in Resources */,
 				552A7A3C2B6E7587000230FA /* LaunchScreen.storyboard in Resources */,
 				552A7A392B6E7587000230FA /* Assets.xcassets in Resources */,
-				552A7A372B6E7586000230FA /* Main.storyboard in Resources */,
+				552A7A6A2B6E7762000230FA /* HomeViewController.xib in Resources */,
+				552A7A792B6E7DBC000230FA /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +384,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552A7A342B6E7586000230FA /* ViewController.swift in Sources */,
+				552A7A7B2B6E7EC7000230FA /* UINavigationBar+Ext.swift in Sources */,
+				552A7A682B6E7762000230FA /* HomeViewController.swift in Sources */,
+				552A7A762B6E7DBC000230FA /* SettingsRouter.swift in Sources */,
+				552A7A8C2B6E84F5000230FA /* MapsViewController.swift in Sources */,
+				552A7A702B6E7B81000230FA /* UIImage+Ext.swift in Sources */,
+				552A7A692B6E7762000230FA /* HomeViewModel.swift in Sources */,
+				552A7A812B6E827A000230FA /* LocationCell.swift in Sources */,
+				552A7A6E2B6E7AE5000230FA /* UIBarButtonItem+Ext.swift in Sources */,
+				552A7A782B6E7DBC000230FA /* SettingsViewModel.swift in Sources */,
+				552A7A8D2B6E84F5000230FA /* MapsViewModel.swift in Sources */,
+				552A7A672B6E7762000230FA /* HomeRouter.swift in Sources */,
+				552A7A7D2B6E81F9000230FA /* UIView+Ext.swift in Sources */,
 				552A7A302B6E7586000230FA /* AppDelegate.swift in Sources */,
 				552A7A322B6E7586000230FA /* SceneDelegate.swift in Sources */,
+				552A7A8B2B6E84F5000230FA /* MapsRouter.swift in Sources */,
+				552A7A852B6E837C000230FA /* LocationModel.swift in Sources */,
+				552A7A772B6E7DBC000230FA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +437,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		552A7A352B6E7586000230FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				552A7A362B6E7586000230FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		552A7A3A2B6E7587000230FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,9 +578,9 @@
 				INFOPLIST_FILE = BringGlobal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,9 +605,9 @@
 				INFOPLIST_FILE = BringGlobal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
