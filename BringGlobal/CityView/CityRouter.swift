@@ -8,7 +8,11 @@
 
 import Foundation
 
-class CityRouter {
+protocol CityRouterProtocol {
+    func navigateTo7DaysForecast(for location: LocationModel)
+}
+
+class CityRouter: CityRouterProtocol {
     
     // MARK: - Properties
     

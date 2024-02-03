@@ -13,7 +13,7 @@ class CityViewModel {
     // MARK: - Properties
     
     weak var view: CityViewControllerProtocol?
-    var router: CityRouter?
+    var router: CityRouterProtocol?
     
     private let locationModel: LocationModel!
     private let service: WeatherServiceProtocol!

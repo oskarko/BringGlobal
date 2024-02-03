@@ -23,10 +23,10 @@ class MapsViewModel {
     
     // MARK: - Helpers
     
-    func didTap(for annotation: MKAnnotation) {
-        let locationModel = LocationModel(title: (annotation.title ?? "") ?? "",
-                                          latitude: annotation.coordinate.latitude,
-                                          longitude: annotation.coordinate.longitude)
+    func didTap(for annotation: MKAnnotation?) {
+        let locationModel = LocationModel(title: (annotation?.title ?? "") ?? "",
+                                          latitude: annotation?.coordinate.latitude ?? 0,
+                                          longitude: annotation?.coordinate.longitude ?? 0)
         locationManager.saveLocation(locationModel)
         view?.removeAllAnnotations()
         view?.showConfirm()
