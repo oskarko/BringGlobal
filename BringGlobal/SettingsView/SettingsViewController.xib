@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Klw-QK-Dc1">
-                    <rect key="frame" x="0.0" y="59" width="375" height="160"/>
+                    <rect key="frame" x="0.0" y="59" width="375" height="240"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88z-z6-q8O" userLabel="UnitsView">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -46,7 +46,7 @@
                                     </connections>
                                 </segmentedControl>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="Pef-xx-5NC" secondAttribute="trailing" constant="16" id="0b4-9b-xKY"/>
                                 <constraint firstItem="Zdq-rP-ed8" firstAttribute="leading" secondItem="88z-z6-q8O" secondAttribute="leading" constant="16" id="969-I9-YL7"/>
@@ -74,13 +74,40 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="koM-PX-Mbf" secondAttribute="trailing" constant="16" id="BxA-GG-yvT"/>
                                 <constraint firstAttribute="height" constant="80" id="Gaz-6J-sBM"/>
                                 <constraint firstItem="koM-PX-Mbf" firstAttribute="centerY" secondItem="2o5-Ey-aNf" secondAttribute="centerY" id="a8t-p8-7Nz"/>
                                 <constraint firstItem="2o5-Ey-aNf" firstAttribute="leading" secondItem="Wdm-y3-TY9" secondAttribute="leading" constant="16" id="k4a-Vl-v2e"/>
                                 <constraint firstItem="2o5-Ey-aNf" firstAttribute="centerY" secondItem="Wdm-y3-TY9" secondAttribute="centerY" id="ruw-s8-LWq"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59C-wE-FDB" userLabel="HelpView">
+                            <rect key="frame" x="0.0" y="160" width="375" height="80"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you need help?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02Z-XD-nWU">
+                                    <rect key="frame" x="16" y="30" width="141.33333333333334" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDH-HU-7vu">
+                                    <rect key="frame" x="260.33333333333331" y="23.000000000000004" width="98.666666666666686" height="34.333333333333343"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="tinted" title="Open doc"/>
+                                    <connections>
+                                        <action selector="openOfficialDocumentarionButtonTapped:" destination="-1" eventType="touchUpInside" id="VsQ-Bp-qFj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="02Z-XD-nWU" firstAttribute="leading" secondItem="59C-wE-FDB" secondAttribute="leading" constant="16" id="3hk-Jz-d8e"/>
+                                <constraint firstItem="RDH-HU-7vu" firstAttribute="centerY" secondItem="02Z-XD-nWU" secondAttribute="centerY" id="XZw-BS-3C3"/>
+                                <constraint firstItem="02Z-XD-nWU" firstAttribute="centerY" secondItem="59C-wE-FDB" secondAttribute="centerY" id="atb-hn-YX1"/>
+                                <constraint firstAttribute="height" constant="80" id="nb1-iS-JEh"/>
+                                <constraint firstAttribute="trailing" secondItem="RDH-HU-7vu" secondAttribute="trailing" constant="16" id="qkf-6o-w6f"/>
                             </constraints>
                         </view>
                     </subviews>

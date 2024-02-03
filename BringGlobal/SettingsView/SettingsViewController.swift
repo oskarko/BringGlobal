@@ -41,6 +41,9 @@ final class SettingsViewController: UIViewController {
         viewModel.send(.delete)
     }
     
+    @IBAction func openOfficialDocumentarionButtonTapped(_ sender: UIButton) {
+        viewModel.send(.officialDoc)
+    }
     // MARK: - Helpers
 
     private func configureUI() {

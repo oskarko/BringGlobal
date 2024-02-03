@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 enum SettingsAction {
     case delete
     case measurement(Int)
+    case officialDoc
 }
 
 class SettingsViewModel {
@@ -32,6 +34,7 @@ class SettingsViewModel {
         switch action {
         case .delete: deleteLocations()
         case let .measurement(int): updateMeasurement(for: int)
+        case .officialDoc: openOfficialDocumentationWebPage()
         }
     }
     
@@ -42,5 +45,13 @@ class SettingsViewModel {
     
     private func updateMeasurement(for type: Int) {
         locationManager.updateMeasurement(for: type)
+    }
+    
+    private func openOfficialDocumentationWebPage() {
+        guard let url = URL(string: MAIN_URL) else { return }
+        
+        if UIApplication.shared.canOpenURL(url) {
+             UIApplication.shared.open(url)
+        }
     }
 }
